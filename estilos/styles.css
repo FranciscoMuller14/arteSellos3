@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    background-color: rgb(245, 211, 158);
+    height: auto;
+    font-size: 1cm;   
+    }
+
+img{
+    
+    width: 250px;
+    height: 250px;
+    
+    
+  }
+  .grilla{
+      background-color: white;
+  }
+ footer{
+     background-color: rgb(158, 102, 62);
+ }
+
+/*-------------------------------------------------*/
+
+nav{
+grid-area: nav;
+
+}
+
+.galeria{
+grid-area: galeria;
+}
+
+footer{
+    grid-area: footer;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+ }
+ .galeriaproductos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+ }
+
+ .grilla{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "galeria"
+    "footer";
+  }
+
+  /*-------------------------------*/
+
+  @media (min-width:500px){
+    .galeria{
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-areas: 
+      "header header"
+      "nav nav"
+      "galeria galeria"
+      "footer footer"
+    }
+    }
+    @media (min-width:500px){
+        .galeriaproductos{
+          grid-template-columns: 1fr 1fr 1fr ;
+          grid-template-areas: 
+          "header header"
+          "nav nav"
+          "galeria galeria"
+          "footer footer"
+        }
+        }
+    
+/*--------------------------------------------*/
+
+img:hover{
+height: 275px;
+width: 275px;
+transition: 2s;
+align-items: center;
+}
+nav ul li {
+    font-family: fantasy;
+    padding: 5px;
+    margin-left: 80px;
+ 
+    
+}
+a{
+    margin-left: 80px;
+     
+}
+a:hover{
+    background-color: rgb(243, 202, 135);
+    
+}
+/*----------------
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: blue;
+
+}
+---------------------*/
+a img{
+
+    height: 75px;
+    width: 75px;
+ 
+}
+a img:hover{
+    height: 85px;
+    width: 85px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: fantasy;
+    justify-content: top;
+    justify-content: baseline;
+    margin-right: 40%;
+    color: brown;
+ } 
+
+ footer{
+     margin-top: 10px;
+ }
+ .formulario{
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+ .main-contacto{
+     height: auto;
+ }
